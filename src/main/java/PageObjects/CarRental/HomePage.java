@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class HomePage extends Base {
 
-    @FindBy(className = "amain-banner-area")
+    @FindBy(className = "main-banner-area")
     private static WebElement pickupLocationField;
 
     public static void goToHomPage() {
