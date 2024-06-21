@@ -45,7 +45,7 @@ public class CommonOps extends Base{
     public void beforeTestMethod(Method method) {
         name = method.getAnnotation(Test.class).testName();
         test = extent.createTest(name);
-        driver.get("https://rent.eldan.co.il/");
+        //driver.get("https://rent.eldan.co.il/");
     }
 
     // TestNG annotation runs after every test method and perform everything we need to do after each test
@@ -67,7 +67,7 @@ public class CommonOps extends Base{
     }
 
     // Method collect user data from properties file throw Users interface
-    public static SiteProperties users() {
+    public static SiteProperties site() {
         return ConfigFactory.create(SiteProperties.class);
     }
 }
